@@ -4,7 +4,6 @@
   margin: auto;
   background: grey;
   box-shadow: 0px 0px 2px 1px rgba(32, 32, 32, 0.3);
-  border-radius: 10px;
   display: grid;
   grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr;
   grid-template-rows: 0.4fr 2.2fr 0.4fr;

@@ -2,9 +2,12 @@
   position: relative;
   width: 50px;
   height: 75px;
-  background: white;
+  background: transparent;
   box-shadow: 0px 0px 2px 1px rgba(32, 32, 32, 0.3);
-  border-radius: 10px;
+  background-image: url("carte_bonus.png");
+  background-size: cover;
+  background-color: transparent;
+  transition: 0.5s;
 }
 
 .containerCard p {
@@ -15,12 +18,13 @@
 
 .containerCardDos {
   position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #424242;
   width: 50px;
   height: 75px;
-  border-radius: 10px;
+  background-color: aqua;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 75px;
   opacity: 1;
 }
 
@@ -29,5 +33,31 @@
   opacity: 0;
 }
 .containerCard > .containerCardDos {
-  transition: ease 0.5s;
+  transition: ease 0.3s;
+}
+
+.joueur1 .containerCard:hover {
+  transform: scale(1.4);
+  z-index: 1;
+  box-shadow: 0px 0px 10px 0px yellow;
+}
+.joueur2 .containerCard:hover {
+  transform: scale(1.4) rotate(90deg);
+  z-index: 1;
+  box-shadow: 0px 0px 10px 0px green;
+}
+.joueur3 .containerCard:hover {
+  transform: scale(1.4);
+  z-index: 1;
+  box-shadow: 0px 0px 10px 0px orangered;
+}
+.joueur4 .containerCard:hover {
+  transform: scale(1.4);
+  z-index: 1;
+  box-shadow: 0px 0px 10px 0px brown;
+}
+.joueur5 .containerCard:hover {
+  transform: scale(1.4) rotate(90deg);
+  z-index: 1;
+  box-shadow: 0px 0px 10px 0px darkcyan;
 }
