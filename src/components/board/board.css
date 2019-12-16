@@ -1,0 +1,69 @@
+.board {
+  width: 800px;
+  height: 600px;
+  margin: auto;
+  background: grey;
+  box-shadow: 0px 0px 2px 1px rgba(32, 32, 32, 0.3);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr;
+  grid-template-rows: 0.4fr 2.2fr 0.4fr;
+  grid-template-areas: "joueur3 joueur3 joueur4 joueur4" "joueur2 deckcartes deckcartes joueur5" "joueur2 joueur1 joueur1 joueur5";
+}
+
+.joueur1 {
+  grid-area: joueur1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.joueur2 {
+  grid-area: joueur2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.joueur2 .containerCard {
+  transform: rotate(90deg);
+  margin: -13px;
+}
+
+.joueur3 {
+  grid-area: joueur3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.joueur4 {
+  grid-area: joueur4;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.joueur3 .containerCard {
+  margin: 5px 0px;
+}
+.joueur4 .containerCard {
+  margin: 5px 0px;
+}
+
+.joueur5 {
+  grid-area: joueur5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.joueur5 .containerCard {
+  transform: rotate(90deg);
+  margin: -13px;
+}
+
+.deckcartes {
+  grid-area: deckcartes;
+}

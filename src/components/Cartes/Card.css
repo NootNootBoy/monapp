@@ -1,0 +1,33 @@
+.containerCard {
+  position: relative;
+  width: 50px;
+  height: 75px;
+  background: white;
+  box-shadow: 0px 0px 2px 1px rgba(32, 32, 32, 0.3);
+  border-radius: 10px;
+}
+
+.containerCard p {
+  font-size: 22px;
+  text-align: center;
+  color: red;
+}
+
+.containerCardDos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #424242;
+  width: 50px;
+  height: 75px;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+.containerCard:hover > .containerCardDos {
+  transform: translate(0px, 0px);
+  opacity: 0;
+}
+.containerCard > .containerCardDos {
+  transition: ease 0.5s;
+}
