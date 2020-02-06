@@ -12,6 +12,7 @@
 }
 
 .joueur1 {
+  margin: 10px;
   grid-area: joueur1;
   display: flex;
   flex-direction: row;
@@ -19,6 +20,7 @@
 }
 
 .joueur2 {
+  margin: 10px;
   grid-area: joueur2;
   display: flex;
   flex-direction: column;
@@ -32,6 +34,7 @@
 }
 
 .joueur3 {
+  margin: 10px;
   grid-area: joueur3;
   display: flex;
   flex-direction: row;
@@ -39,6 +42,7 @@
 }
 
 .joueur4 {
+  margin: 10px;
   grid-area: joueur4;
   display: flex;
   flex-direction: row;
@@ -55,6 +59,7 @@
 }
 
 .joueur5 {
+  margin: 10px;
   grid-area: joueur5;
   display: flex;
   flex-direction: column;
@@ -68,4 +73,7 @@
 
 .deckcartes {
   grid-area: deckcartes;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
